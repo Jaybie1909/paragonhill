@@ -12,10 +12,7 @@ export default function App() {
     <>
       {/* Global SEO / Verification */}
       <Helmet>
-        <meta
-          name="google-site-verification"
-          content="xxxx" // ganti xxxx dengan kode dari Google Search Console
-        />
+        <meta name="google-site-verification" content="EqKob9SJXCDL9GkcKtShcF9-aO0Ytcu8cHTABT-Clm8" />
       </Helmet>
 
       <Routes>
