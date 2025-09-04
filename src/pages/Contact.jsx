@@ -3,10 +3,18 @@ import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Send, User, MessageCircle } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Contact() {
   return (
     <>
+      <Helmet>
+    <title>Contact Us - Paragon Hill Batam</title>
+    <meta name="description" content="Hubungi tim profesional Paragon Hill Batam untuk informasi properti premium dan hunian eksklusif." />
+    <meta name="keywords" content="Paragon Hill, Batam, properti, hunian, premium, kontak" />
+    <link rel="canonical" href="https://jb-paragonhill.vercel.app/contact" />
+  </Helmet>
       <Navbar />
 
       {/* Enhanced Hero Section */}

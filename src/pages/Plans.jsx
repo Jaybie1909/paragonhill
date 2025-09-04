@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ChevronDown, Home, Ruler, Eye, Download, ZoomIn } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Plans() {
   const plans = [
@@ -52,6 +54,13 @@ export default function Plans() {
 
   return (
     <>
+      <Helmet>
+        <title>Plans - Paragon Hill Batam</title>
+        <meta name="description" content="Lihat tipe hunian dan floor plans eksklusif Paragon Hill Batam, hunian premium di Batam Center." />
+        <meta name="keywords" content="Paragon Hill, Batam, floor plan, rumah, apartemen, premium" />
+        <link rel="canonical" href="https://jb-paragonhill.vercel.app/plans" />
+      </Helmet>
+
       <Navbar />
 
       {/* Enhanced Hero Section */}

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Shield, Camera, Zap, Home, Droplets, Lock, MapPin, Star } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Facilities() {
   const facilities = [
@@ -40,6 +42,13 @@ export default function Facilities() {
 
   return (
     <>
+      <Helmet>
+        <title>Facilities - Paragon Hill Batam</title>
+        <meta name="description" content="Fasilitas eksklusif Paragon Hill Batam yang mendukung kenyamanan hidup dan gaya hidup premium." />
+        <meta name="keywords" content="Paragon Hill, Batam, fasilitas, properti, premium, hunian" />
+        <link rel="canonical" href="https://jb-paragonhill.vercel.app/facilities" />
+      </Helmet>
+    
       <Navbar />
 
       {/* Enhanced Hero Section */}

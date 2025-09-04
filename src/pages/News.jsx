@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Calendar, User, ArrowRight, Tag, Clock, Gem } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
+
 
 export default function News() {
   const articles = [
@@ -52,6 +54,13 @@ export default function News() {
 
   return (
     <>
+      <Helmet>
+        <title>News & Updates - Paragon Hill Batam</title>
+        <meta name="description" content="Berita terbaru dan update seputar Paragon Hill Batam, hunian premium di Batam Center." />
+        <meta name="keywords" content="Paragon Hill, Batam, news, update, properti, premium" />
+        <link rel="canonical" href="https://jb-paragonhill.vercel.app/news" />
+      </Helmet>
+
       <Navbar />
 
       {/* Enhanced Hero Section */}
